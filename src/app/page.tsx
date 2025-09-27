@@ -204,10 +204,10 @@ export default function Home() {
         )}
 
         {selectedCountry && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center p-4 z-50">
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+          <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-none flex justify-center items-center p-4 z-50">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto">
               <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
+                <div className="flex justify-between items-start mb-6">
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
                     {selectedCountry.name.official}
                   </h2>
@@ -218,22 +218,24 @@ export default function Home() {
                     ×
                   </button>
                 </div>
-                <img
-                  src={selectedCountry.flags.png}
-                  alt={selectedCountry.name.common}
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <span className="font-semibold text-gray-700 dark:text-gray-300">Capital:</span>
+                <div className="flex justify-center mb-6">
+                  <img
+                    src={selectedCountry.flags.png}
+                    alt={selectedCountry.name.common}
+                    className="w-48 h-32 object-contain rounded-lg border border-gray-200 dark:border-gray-600"
+                  />
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <span className="font-semibold text-gray-700 dark:text-gray-300 min-w-[80px]">Capital:</span>
                     <span className="text-gray-900 dark:text-gray-100">{selectedCountry.capital?.[0] || 'N/A'}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="font-semibold text-gray-700 dark:text-gray-300">Population:</span>
+                  <div className="flex items-center gap-3">
+                    <span className="font-semibold text-gray-700 dark:text-gray-300 min-w-[80px]">Population:</span>
                     <span className="text-gray-900 dark:text-gray-100">{selectedCountry.population.toLocaleString()}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="font-semibold text-gray-700 dark:text-gray-300">Region:</span>
+                  <div className="flex items-center gap-3">
+                    <span className="font-semibold text-gray-700 dark:text-gray-300 min-w-[80px]">Region:</span>
                     <span className="text-gray-900 dark:text-gray-100">{selectedCountry.region}</span>
                   </div>
                 </div>

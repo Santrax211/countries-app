@@ -1,35 +1,35 @@
 # Countries App
 
-A mini Next.js application that consumes the REST Countries API to display a list of countries with filtering and search capabilities.
+Una mini aplicación Next.js que consume la API de países REST para mostrar una lista de países con capacidades de filtrado y búsqueda.
 
 ## Getting Started
 
-1. Install dependencies:
+1. Instalar dependencias:
    ```bash
    npm install
    ```
 
-2. Run the development server:
+2. Ejecute el servidor de desarrollo:
    ```bash
    npm run dev
    ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Abrir [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## Features
+## Características
 
-- List of countries with name, flag, region, and population
-- Search by country name (case-insensitive)
-- Filter by region
-- Filter by population range (min/max)
-- Modal popup with detailed country information
-- URL persistence for filters
+- Lista de países con nombre, bandera, región y población
+- Búsqueda por nombre de país (sin distinción entre mayúsculas y minúsculas)
+- Filtrar por región
+- Filtrar por rango de población (mín./máx.)
+- Ventana emergente con información detallada del país
+- Persistencia de URL para filtros
 
-## Optional Feature Implemented
+## Función opcional implementada
 
 - Persistir filtros en la URL (Persist filters in the URL)
 
-## Technologies Used
+## Tecnologías usadas
 
 - Next.js
 - TypeScript
